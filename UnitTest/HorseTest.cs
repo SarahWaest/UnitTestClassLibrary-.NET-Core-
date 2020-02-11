@@ -16,13 +16,19 @@ namespace UnitTest
         [TestMethod]
         public void TestLegs()
         {
-            Assert.AreEqual(4, _horse.legs);
+            Assert.AreEqual(4, _horse._legs);
         }
 
     }
 
     internal class Horse
     {
-        public int legs;
+        private int _legs;
+
+        public int Legs
+        {
+            get => _legs;
+            set => _legs = value;
+        }
     }
 }
