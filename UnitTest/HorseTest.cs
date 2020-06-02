@@ -16,7 +16,7 @@ namespace UnitTest
         [TestMethod]
         public void TestLegs()
         {
-            Assert.AreEqual(4, _horse._legs);
+            Assert.AreEqual(4, _horse.Legs);
         }
 
     }
